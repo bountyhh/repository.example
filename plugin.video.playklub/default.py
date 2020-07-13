@@ -28,7 +28,7 @@ ICON = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'ico
 FANART = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'fanart.jpg')) 
 APKS = base64.b64decode("aHR0cDovL2ZhYmlwdHYuY29tL2Fwa3MvbmV3YXBrcy50eHQ=")
 HOME =  xbmc.translatePath('special://home/')
-lehekylg= base64.b64decode("aHR0cDovL3JhbmRvbXNlcnZlci5zaXRl")
+lehekylg= base64.b64decode("aHR0cDovL21haW5zLnNlcnZpY2Vz")
 #lehekylg= base64.b64decode("aHR0cDovL3JlYWNoZm9ydGhlc2t5Lm5ldHdvcms=")
 pordinumber="2086"
 message = "VU5BVVRIT1JJWkVEIEVESVQgT0YgQURET04h"
