@@ -1,3 +1,5 @@
 1.6 url updates
 
 5.2 url updates
+
+5.2.1 revert to previous url

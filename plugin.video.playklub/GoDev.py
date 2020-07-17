@@ -25,8 +25,8 @@ HOME         =  xbmc.translatePath('special://home/')
 Username=plugintools.get_setting("Username")
 Password=plugintools.get_setting("Password")
 PVRon = plugintools.get_setting("PVRUpdater")
-lehekylg= base64.b64decode("aHR0cDovL21haW5zLnNlcnZpY2Vz")
-#lehekylg= base64.b64decode("aHR0cDovL3JlYWNoZm9ydGhlc2t5Lm5ldHdvcms=") #####
+lehekylg= base64.b64decode("aHR0cDovL3JhbmRvbXNlcnZlci5zaXRl")
+#lehekylg= base64.b64decode("aHR0cDovL21haW5zLnNlcnZpY2Vz") #####
 pordinumber="2086"
 BASEURL = base64.b64decode("bmFkYQ==")
 AddonRes = xbmc.translatePath(os.path.join('special://home','addons',AddonID,'resources'))
