@@ -321,7 +321,7 @@ def stream_video(params):
     CatID = params.get(get_live("dXJs")) #description
     url = get_live("JXM6JXMvZW5pZ21hMi5waHA/dXNlcm5hbWU9JXMmcGFzc3dvcmQ9JXMmdHlwZT1nZXRfbGl2ZV9zdHJlYW1zJmNhdF9pZD0lcw==")%(lehekylg,pordinumber,kasutajanimi,salasona,CatID)
     request = urllib2.Request(url, headers={"Accept" : "application/xml","User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"})
-    u = urllib2.urlopen(request)
+    u = urllib2.urlopen(request, timeout = 100)
     tree = ElementTree.parse(u)
     rootElem = tree.getroot()
     for channel in tree.findall(sync_data("Y2hhbm5lbA==")): #channel
