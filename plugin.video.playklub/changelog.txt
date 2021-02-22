@@ -3,3 +3,7 @@
 5.2 url updates
 
 5.2.1 revert to previous url
+
+5.2.3 url update 
+
+5.2.4 name change return of vod

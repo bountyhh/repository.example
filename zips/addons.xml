@@ -31,7 +31,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.playklub" version="5.2.3" name="[COLOR gold]Game Master[/COLOR]" provider-name="Game Master">
+<addon id="plugin.video.playklub" version="5.2.4" name="[COLOR red]Rising Phoenix[/COLOR]" provider-name="Rising Phoenix">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.addon.common" optional="true" />
@@ -42,8 +42,8 @@
     <extension point="xbmc.service" library="service.py" start="startup">
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Game Master</summary>
-        <description>Game Master - Live TV / PPV / Sports / Kids / Entertainment at an affordable price for all.</description>
+        <summary>Rising Phoenix</summary>
+        <description>Rising Pheonix - Live TV / PPV / Sports / Kids / Entertainment at an affordable price for all.</description>
         <disclaimer></disclaimer>
         <language>en</language>
         <platform>all</platform>

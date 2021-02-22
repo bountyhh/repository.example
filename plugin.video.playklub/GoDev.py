@@ -11,7 +11,7 @@ from datetime import datetime
 from datetime import timedelta
 import maintenance
 AddonID = 'plugin.video.playklub'
-AddonTitle = 'Game Master'
+AddonTitle = 'Rising Phoenix'
 Images=xbmc.translatePath(os.path.join('special://home','addons',AddonID,'resources/art/'));
 fanart = Images+'fanart.jpg'
 icon = Images+'icon.png'
@@ -25,9 +25,10 @@ HOME         =  xbmc.translatePath('special://home/')
 Username=plugintools.get_setting("Username")
 Password=plugintools.get_setting("Password")
 PVRon = plugintools.get_setting("PVRUpdater")
-lehekylg= base64.b64decode("aHR0cDovL3JhbmRvbXNlcnZlci5zaXRl")
-#lehekylg= base64.b64decode("aHR0cDovL21haW5zLnNlcnZpY2Vz") #####
-pordinumber="2086"
+#lehekylg= base64.b64decode("aHR0cDovL3JhbmRvbXNlcnZlci5zaXRl")
+#pordinumber="2086"
+lehekylg= base64.b64decode("aHR0cDovL2hvc3RlbmdpbmUubGl2ZQ==")
+pordinumber="25461"
 BASEURL = base64.b64decode("bmFkYQ==")
 AddonRes = xbmc.translatePath(os.path.join('special://home','addons',AddonID,'resources'))
 loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tcGVndHM=")%(lehekylg,pordinumber,Username,Password)

@@ -23,21 +23,23 @@ addonxml = "YWRkb24ueG1s"
 addonpy = "ZGVmYXVsdC5weQ=="
 icon = "aWNvbi5wbmc="
 fanart = "ZmFuYXJ0LmpwZw=="
-supplier = "VFBL"
+supplier = "UEhPRU5JWA=="
 ICON = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png')) 
 FANART = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'fanart.jpg')) 
 APKS = base64.b64decode("aHR0cDovL2ZhYmlwdHYuY29tL2Fwa3MvbmV3YXBrcy50eHQ=")
 HOME =  xbmc.translatePath('special://home/')
-lehekylg= base64.b64decode("aHR0cDovL21hZ3Mudmlw")
-#lehekylg= base64.b64decode("aHR0cDovL21haW5zLnNlcnZpY2Vz")
-pordinumber="2086"
+#lehekylg= base64.b64decode("aHR0cDovL21hZ3Mudmlw")
+#pordinumber="2086"
+lehekylg= base64.b64decode("aHR0cDovL2hvc3RlbmdpbmUubGl2ZQ==")
+pordinumber="25461"
 message = "VU5BVVRIT1JJWkVEIEVESVQgT0YgQURET04h"
 kasutajanimi=plugintools.get_setting("Username")
 salasona=plugintools.get_setting("Password")
 F1ICON = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'F1.png'))
-BASEURL = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tcGVndHM=")
+BASEURL = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdSZvdXRwdXQ9aGxz")
+#BASEURL = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tcGVndHM=")
 LOAD_LIVEchan = os.path.join( plugintools.get_runtime_path() , "resources" , "art/arch" )
-loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tcGVndHM=")%(lehekylg,pordinumber,kasutajanimi,salasona)
+loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdSZvdXRwdXQ9aGxz")%(lehekylg,pordinumber,kasutajanimi,salasona)
 
 def run():
     global pnimi
@@ -91,7 +93,7 @@ def peamenyy(params):
     channels = kontroll()
     if channels == 1 and GoDev.mode != 5 and GoDev.mode != 1:
         plugintools.log(pnimi+vod_channels("TG9naW4gU3VjY2Vzcw=="))
-        plugintools.add_item( action=vod_channels("c2VjdXJpdHlfY2hlY2s="),  title="[COLOR gold][B][I]PLAYERS LIVE[/I][/B][/COLOR]", thumbnail=os.path.join(LOAD_LIVE,vod_channels("bGl2ZXR2LnBuZw==")) , fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
+        plugintools.add_item( action=vod_channels("c2VjdXJpdHlfY2hlY2s="),  title="[COLOR gold][B]LIVE TV[/B][/COLOR]", thumbnail=os.path.join(LOAD_LIVE,vod_channels("bGl2ZXR2LnBuZw==")) , fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
         plugintools.add_item( action=vod_channels("ZGV0ZWN0X21vZGlmaWNhdGlvbg=="),   title="[COLOR deepskyblue][B]MOVIES[/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("dm9kLnBuZw==")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
         plugintools.add_item( action=vod_channels("ZGV0ZWN0X21vZGlmaWNhdGlvbjI="),   title="[COLOR red][B]TV SHOWS[/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("dm9kLnBuZw==")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
         plugintools.add_item( action=vod_channels("VGhlRGV2"),   title="[COLOR orange][B]CATCHUP[/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("dm9kLnBuZw==")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) , folder=True )
@@ -472,7 +474,7 @@ def RecentlyAdded2(params):
 			if StreamID:
 				striimilink = vod_channels('JXM6JXMvc2VyaWVzLyVzLyVzLyVzLiVz')%(lehekylg,pordinumber,kasutajanimi,salasona,StreamID,Ext)
 				URL = vod_channels('JXM6JXMvcGxheWVyX2FwaS5waHA/dXNlcm5hbWU9JXMmcGFzc3dvcmQ9JXMmYWN0aW9uPWdldF9zZXJpZXNfaW5mbyZzZXJpZXNfaWQ9JXM=')%(lehekylg,pordinumber,kasutajanimi,salasona,StreamID)
-				Meta = json.load(urllib2.urlopen(URL))
+				Meta = json.load(urllib.urlopen(URL))
 				try:
 					Plot = Meta['info']['plot']
 				except:
